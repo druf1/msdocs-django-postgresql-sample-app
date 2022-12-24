@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-7ppocbnx@w71dcuinn*t^_mzal
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = [".mylegacykeeper.com","mylegacykeeper.com","www.mylegacykeeper.com",".www.mylegacykeeper.com", "40.119.12.19","mylegacykeeper"]
+ALLOWED_HOSTS = ['.mylegacykeeper.com', 'mylegacykeeper.com', 'www.mylegacykeeper.com', '.www.mylegacykeeper.com', '40.119.12.19','mylegacykeeper', 'https://msdocs-python-postgres-aaa.azurewebsites.net', os.environ['WEBSITE_HOSTNAME']]
 
 if 'CODESPACE_NAME' in os.environ:
     CSRF_TRUSTED_ORIGINS = [f'https://{os.getenv("CODESPACE_NAME")}-8000.{os.getenv("GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN")}']
